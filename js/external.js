@@ -1,21 +1,11 @@
 //console.log("Whats UP Dragon!");
-
-
-
-
 //alert("Welcome to my Website");
-
-
-
-// the following line will show the OK/CANCEL confirm dialog
-//var confirmed = confirm('Are you sure you want to do XYZ?');
-//console.log(confirmed); // will be either true or false
 
 
 //var userInput = prompt('What is your favorite color?');
 //console.log('The user entered: ' + userInput);
 
-//alert("great, your favorite color is " + userInput)
+//alert("great, your favorite color is " + userInput + "That's my favorite color too");
 
 //Question: Movie
 var userInput = prompt("How long will you be renting Little Mermaid?");
