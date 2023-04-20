@@ -19,23 +19,39 @@
 // 65536
 // NOTES: While loops are used to repeat a block of code as long as a certain condition is true. **THE LOOPS WILL CONTINUE UNTIL THE CONDITION BECOMES FALSE**// let i = 1;
 // //
-//EXAMPLE found online:
-// https://www.sitepoint.com/community/t/javascript-function-with-computing-power-noob-question-using-for-loop/36762/3
-// function power(base, exponent) {
-//     var result = 1;
-//     for (var count = 0; count < exponent; count++){
-//         result *= base;
-//     }
-//     return result;
-// }
-//
-// console.log(power(2, 10));
 
-let i = 1;
-while(i<=65536){
-    i*=2
-    console.log(i);
-}
+// let i = 1;
+// while(i<=65536){
+//     i*=2
+//     console.log(i);
+// }
+//David's Solutions:
+// let x = 1
+// while ( x <= 65536;)
+//     x *= 2;
+// console.log(x);
+//
+// //
+// let x = 2
+// while ( x < 65537;)
+// {
+//     x *= 2;
+//     console.log(x);
+// }
+// function listMemory(i , n){
+//     while (i <= n) {
+//         console.log(i);
+//         i *= 2;
+//     }
+//
+// }
+// listMemory(2, 65536)
+
+
+
+
+
+
 //* example (**) used for exponents
 //let i = 1;
 //
@@ -66,11 +82,19 @@ let x = Math.floor(Math.random() *50) + 50;
        let m = Math.floor(Math.random() * 5) + 1;
     console.log(m);
 
+// David's Solution:
+    let allCones = Math.floor(Math.random() *50) + 50;
+        do {
+            let conesToSell = Math.floor(Math.random() * 5) + 1;
+            if (allCones >= conesToSell) {
+                allCones -= conesToSell;
+                console.log(` Customer is purchasing ${conesToSell}. Only ${allCones} left..`);
 
+            } else {
+                console.log(`Sorry i cannot sell ${conesToSell}. Only ${allCones} left..`);
+            }
 
-
-
-
+        }  while (allCones !== 0)
 
 
 
