@@ -78,11 +78,23 @@ for (let i = 1; i <=9; i++){
 // 15
 // 10
 // 5
- for (let i = 100; i <= 100; i--){
-     for (let)
- }
+//
+// for (let i = 5; i < 101; i= 1-5) {
+//     console.log(`${i} - ${5} = ${i - 5}`);
+// }
+for (let i = 100; i >= 5; i-=5){
+    console.log(i);
+}
 
 
+// function showMultiplicationTable(m){
+//     for(let i = 1; i < 11; i = i+1) {
+//         console.log(`${m} * ${i} = ${m * i}`);
+//
+//     }
+// }
+//
+// showMultiplicationTable(7)
 
 
 

@@ -55,6 +55,8 @@ function isEmptyString(string){
         return false;
     }
 }
+
+
 // David's Solutions:
 // function isEmptyString(input){
 //     return input === "";
