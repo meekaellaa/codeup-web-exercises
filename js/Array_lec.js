@@ -36,10 +36,16 @@
     // For/each loop is not an actual loop and you CANNOT use a break and continue. BUT you can use if/else statement.
 
     //For/each loop
-    cheeses.forEach(function (){ // this is the basic structure. elements are a required parameter inside a function.
+    cheeses.forEach(function (cheese){
+        console.log(cheese);// this is the basic structure. elements are a required parameter inside a function.
         //index and array are optional.
         //we will name our arrays a plural noun, and refer to individual elements by the singular version of the noun.
 
+    });
+
+    cheeses.forEach(function (cheese,index,array){
+        console.log(`${index}: ${cheese}`);
+        console.log(array);
     })
 
 })();
