@@ -30,7 +30,8 @@
     document.getElementById("put - here").innerHTML = planetsStringWithBreakss;
 
     let planetsUL = '<ul><li>' + planetsArray.join('</li><li>') + '</ul></li>'
-document.getElementById("put - here").innerHTML += planetsUL
+document.getElementById("put - here").innerHTML += planetsUL;
+
 
     // I don't understand where the id thing came from..
 
