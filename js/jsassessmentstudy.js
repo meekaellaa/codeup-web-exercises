@@ -19,7 +19,7 @@
 //     } else
 //         return x % y;
 // }
-//
+// *** This WORKED!
 //     function remainder(x,y){
 //        if ( typeof x === 'number' && typeof y === 'number') {
 //            return  x % y;
@@ -43,10 +43,10 @@
 //Question #2
 //Write a function named containsAce  that takes in an argument and returns true  if the
 // argument passed is a string that contains the sequence of characters "ace"  somewhere
-// within the string. This check should be case insensitive. The function should return false if the
+// within the string. This check should be case-insensitive. The function should return false if the
 // argument is not a string, or if it doesn't contain "ace"  somewhere in the string.
 // Consider the following test cases:
-// JavaScript Fundamentals Assessment
+//
 //  let ourAce = "ace"
 //
 // function containsAce(x){

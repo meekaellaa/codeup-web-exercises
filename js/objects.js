@@ -23,6 +23,9 @@
         console.log(person.firstName);
         console.log(person.lastName);
 
+
+
+
             /**
              * TODO:
              * Add a sayHello method to the person object that returns a greeting using
@@ -42,7 +45,14 @@
     console.log(person.sayHello);
 
 
-
+//     let person = {
+//         firstName: "Michaella ",
+//         lastName: "Moreno",
+//         // sayHello: function(){
+//         //     return  sayHello: ("HELLO FROM " + (this.firstName) + '' + (this.lastName) + "!"),
+//     }
+// }
+// }
 
             /** TODO:
              * HEB has an offer for the shoppers that buy products amounting to
@@ -65,16 +75,30 @@
                 {name: 'George', amount: 320},
                 {name: 'me', amount: 500}
             ];
+// Answer. Everything else is a step to reach this answer. make sure to make it plural so when it's called upon you can use the singular.
     shoppers.forEach(function (shopper){
         if(shopper.amount >= 200){
             console.log(shopper.name + 'spent $ ' + shopper.amount + '. ' + 'Congratulations, you earned  a discount of 12%! Your new total is ' + (shopper.amount - (shopper.amount * .12)));
-        } else {
-            console.log(shopper.name + ' you will not be receiving a 12% discount. Your total is ' + shopper.amount);
+         } else {
+             console.log(shopper.name + ' you will not be receiving a 12% discount. Your total is ' + shopper.amount);
         }
 
-    });
+     });
+    //
+    // for (let i = 0; i < 4;i++){
+    //     if(shoppers[i].amount >= 200){
+    //         console.log(shoppers[i].name + 'spent $ ' + shoppers[i].amount + '. ' + 'Congratulations, you earned  a discount of 12%! Your new total is ' + (shoppers[i].amount - (shoppers[i].amount * .12)));
+    //     } else {
+    //         console.log(shoppers[i].name + ' you will not be receiving a 12% discount. Your total is ' + shoppers[i].amount);
+    //     }
+    //
+    //
+    // }
+    // console.log(shoppers.length);
 
-//*******DO IT WITHOUT THE LOOP!!!!!!******
+
+
+//*******DO IT WITHOUT THE LOOP FIRST AND THEN REFACTOR IT INTO A LOOP!!!!!!****** TRY TO DO IT FOR ONE PERSON FIRST.
 //
 //         if(shoppers[1].amount >= 200){
 //             console.log(shoppers[1].name + 'spent $ ' + shoppers[1].amount + '. ' + 'Congratulations, you earned  a discount of 12%! Your new total is ' + (shoppers[1].amount - (shoppers[1].amount * .12)));
@@ -101,6 +125,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /** TODO:
              * Create an array of objects that represent books and store it in a
              * variable named `books`. Each object should have a title and an author
@@ -114,7 +158,7 @@
              * > console.log(books[0].author.lastName) // "Adams"
              */
 
-
+                let
 
 
 
@@ -148,6 +192,11 @@
              *      ...
              */
 
+
+
+
+
+
             /**
              * Bonus:
              * - Create a function named `createBook` that accepts a title and author
@@ -158,6 +207,30 @@
              *   outputs the information described above. Refactor your loop to use your
              *   `showBookInfo` function.
              */
+
+        // cody pushes the book into the array above and calls the function from above. make sure to move it above the foreach.
+        //he pushes by using push
+
+
+        // he edits the books.for each and calls the function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             // FOR LOOP EXAMPLE
@@ -178,16 +251,16 @@
     // starting at zero because using an array and arrays index at 0
     // shoppers length could also be renamed as 4 BCUZ there are 4 elements in the array.
 
-       for(let i = 0; i < 4;i++){
-           if(shoppers[i].amount >= 200){
-               console.log(shoppers[i].name + 'spent $ ' + shoppers[i].amount + '. ' + 'Congratulations, you earned  a discount of 12%! Your new total is ' + (shoppers[i].amount - (shoppers[i].amount * .12)));
-           } else {
-               console.log(shoppers[i].name + ' you will not be receiving a 12% discount. Your total is ' + shoppers[i].amount);
-           }
-
-
-       }
-    console.log(shoppers.length);
+    //    for(let i = 0; i < 4;i++){
+    //        if(shoppers[i].amount >= 200){
+    //            console.log(shoppers[i].name + 'spent $ ' + shoppers[i].amount + '. ' + 'Congratulations, you earned  a discount of 12%! Your new total is ' + (shoppers[i].amount - (shoppers[i].amount * .12)));
+    //        } else {
+    //            console.log(shoppers[i].name + ' you will not be receiving a 12% discount. Your total is ' + shoppers[i].amount);
+    //        }
+    //
+    //
+    //    }
+    // console.log(shoppers.length);
 
 
 
