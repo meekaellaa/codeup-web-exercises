@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML FORM LECTURE</title>
+</head>
+<body>
+<!--// action is where the request is being sent. location we are taking n sending info is action.-->
+<!--// input is a void element doesn't have a closing tag-->
+<!--//name attribute is required. gives a key for the input the user provides.-->
+<!--// submit = submit button-->
+<!--default for a form is a get request, get info from a service.-->
+<!--method is not case sensitive.  -->
+<!--label for needs to match with the id-->
+<!--id = structure for html name = request-->
+<!--name does not need to match the id BUT they often match. easier to remember which element working on-->
+<!--placeholder will disappear when you type into the form..-->
+    <form method="post"  action="https://request-inpector.glitch.me/">
+      <label for="value">Value</label>
+      <input type="text" name="value" id="value">
+        <label for="pw">Password</label>
+        <input type="pasword" name="pw" id="pw">
+        <label for="body">Body</label>
+        <textarea name="body" id="body" cols="30" rows="10"></textarea>
+        <br>
+        <h3>How can we reach you?</h3>
+        <input type="checkbox" id="no-tm" name="notification-options" value="text-messaging">
+        <label for="no-tm">Text Messaging</label>
+        <input type="checkbox" id="no-e"    name="notification-options" value="email">
+        <label for="no-e">Email</label>
+<!--   radio button only allows one value. -->
+        <h3>What is 2 + 2?</h3>
+        <input type="radio" id="mq-a" name="math question" value="a"> <label for="mq-a">1</label>
+        <input type="radio" id="mq-b" name="math question" value="b"> <label for="mq-b">22</label>
+        <input type="radio" id="mq-c" name="math question" value="b"> <label for="mq-c">4</label>
+        <input type="radio" id="mq-d" name="math question" value="c"> <label for="mq-d">20</label>
+<!--if you give them all different names, you can select all of them. BUT once you've made a selection you can;t unselect em. -->
+<!-- drop down menu type ting      -->
+        <h3>What's your Dreamworks film?</h3>
+      <select name="fav-dreamworks-film" id="fav-dreamworks-film">
+        <option value="Shrek">Shrek</option>
+        <option value="Megamind"> Megamind</option>
+<!--        ADDING SELECT WILL COME UP SELECTED EVERYTIME YOU REFRESH THE PAGE.-->
+        <option value="Kungfu Panda" selected>Kung Fu Panda</option>
+        <option value="monsters Inc"> Monster Inc</option>
+      </select>
+      <input type="hidden" name="secret" value="I love chicken">
+
+      <input type="submit">
+<!-- with this button it will change based on the browser.  if you want the text to be the same across all browser use value and rename it..
+      or you can just create a button... by using <button></button> element-->
+<!--        password automatically hide the input-->
+<!--         make sure the for is matching up with the appropriate value. -->
+
+    </form>
+
+
+
+</body>
+</html>
