@@ -2,3 +2,10 @@
     color: mediumpurple; /* single line comment */
     text-decoration: underline;
 }
+
+#main-heading{
+    color: #855A04;
+    text-decoration: underline cornflowerblue;
+    text-align: center;
+    font-family: "American Typewriter";
+}

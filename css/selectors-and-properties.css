@@ -1,0 +1,102 @@
+/*this will change all the paragraphs.*/
+body{
+    background: antiquewhite;
+    background-image: url("../img/Jordan Retro Concord.jpeg");
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed; allows the content to scroll  on top without the background moving.*/
+}
+/*if working with smaller image it will repeat, work around == background-repeat: no-repeat*/
+p{
+    color: mediumpurple;
+    text-indent: 25pixels;
+}
+
+.heading{
+    color: greenyellow;
+    font-weight: bold;
+
+}
+/*something with an id, id take precedence */
+/*rgb function can be used for color or google. LOL
+tool to generate random color palette colors.co and they give the hex code. */
+/*text aligns text and only text!*/
+/*fonts.google for fonts and use the link to hyperlink it into html. this will be the only thing no considered hot linking.*/
+
+/* an element default color is always transparent*/
+#main-heading{
+    color: #855A04;
+    text-decoration: underline cornflowerblue;
+    text-align: center;
+    font-family: "American Typewriter";
+}
+/*multiple and repeated, this uses commas to select multiple selectors with identical styling */
+
+#main-heading, .reminder{
+    background-color: yellow;
+}
+/*em= height of character, newspaper term*/
+.make-bigger{
+    font-size: 2em;
+}
+
+/* combing element with a class*/
+
+h1.make-bigger{
+    font-size: 4em;
+}
+
+h1.heading{
+    color: aquamarine;
+}
+/*an element of a class is more specific that a */
+h2.heading{
+    color: aqua;
+}
+
+.reminder.make-bigger{
+    color: brown;
+}
+/*within my footer any paragraph will have this color. */
+footer p{
+    color: darkseagreen;
+}
+
+/*this will remain the color above.*/
+footer>p{
+    color: orchid;
+}
+
+/*pseudo classes can be confusing but useful. anchor tags wil HAVE to use pseudo classes*/
+ a:link{
+     color: cadetblue;
+ }
+
+ a:visited{
+     color: honeydew;
+ }
+
+ a:hover{
+     background-color: darkmagenta;
+ }
+
+ a:active{
+     color: black;
+ }
+/*vh & vw are relative sizing options based on browsers.*/
+#jordan{
+    width: 100vh;
+}
+ul{
+    list-style: upper-roman;
+}
+ol{
+    list-style: square;
+    color: greenyellow;
+}
+li{
+    color: greenyellow;
+}
+ol li {
+    color: inherit;
+}
