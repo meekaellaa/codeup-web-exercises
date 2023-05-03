@@ -1,8 +1,11 @@
 
 #main-heading{
+    text-align: left;
+    text-decoration: unset;
+}
+.welcome{
     text-align: center;
 }
-
 h1{
     color:wheat;
     text-decoration: underline;
@@ -59,4 +62,15 @@ a:hover{
 
 a:active{
     color: black;
+}
+.vision{
+    text-align: right;
+}
+.process{
+    text-align: center;
+}
+#main-table{
+    text-align: center;
+    padding: 5px;
+    border: 5px solid wheat;
 }
