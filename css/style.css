@@ -4,24 +4,26 @@
 }
 
 h1{
-    color: darkseagreen;
+    color:wheat;
     text-decoration: underline;
 }
 h2{
-    color: darkseagreen;
+    color: wheat;
     text-decoration: underline;
     text-indent: 2em;
 }
-h3{
-    color: darkseagreen;
+ h3{
+    color:wheat ;
     text-decoration: underline;
 }
 
 body{
     background-color: antiquewhite;
-    background-image: url("../img/backgroundformybackground.jpeg");
-    font-family: "PT Sans Narrow";
+    background-image: url("../img/coffee.png");
+    font-family: "Marker Felt";
     text-indent: 2em;
+    background-attachment: fixed;
+    color: antiquewhite;
 }
 
 ol {
@@ -36,9 +38,11 @@ table{
 }
 table td{
     font-size: inherit;
+
 }
 table tr{
     font-size: inherit;
+    color: antiquewhite;
 }
 
 a:link{
