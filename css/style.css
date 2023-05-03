@@ -10,6 +10,7 @@ h1{
 h2{
     color: darkseagreen;
     text-decoration: underline;
+    text-indent: 2em;
 }
 h3{
     color: darkseagreen;
@@ -20,6 +21,7 @@ body{
     background-color: antiquewhite;
     background-image: url("../img/backgroundformybackground.jpeg");
     font-family: "PT Sans Narrow";
+    text-indent: 2em;
 }
 
 ol {
@@ -54,4 +56,3 @@ a:hover{
 a:active{
     color: black;
 }
-

@@ -45,39 +45,86 @@
 // Warm-up 05/02/2023
 // Write a function that takes in a string and counts the instances of the letter 'e' within the argument. The count should be case insensitive. If the string does not contain any 'e's it should return 0. If the argument is not a string it should return false.
 
-    function countEs(word) {
-    if(typeof word === "string" && word.indexOf("e","E")){
-        return word.indexOf();
-        } else{
-        return false;
-    }
-}
+//     function countEs(word) {
+//     if(typeof word === "string" && word.indexOf("e","E")){
+//         return word.indexOf();
+//         } else{
+//         return false;
+//     }
+// }
 
 //This isn't working......
 
 //David's Solution:
- function countEs(str){
-    if (typeof str === "string"){
-        let count = 0;
-        let normalizedStr = str.toLowerCase();
-        for (let i = 0; i <str.length; i++)
-            if(normalizedStr.charAt(i) === "e"){
-                count++;
-            }
-        return count;
-    } else {
-        return false;
-    }
- }
+//  function countEs(str){
+//     if (typeof str === "string"){
+//         let count = 0;
+//         let normalizedStr = str.toLowerCase();
+//         for (let i = 0; i <str.length; i++)
+//             if(normalizedStr.charAt(i) === "e"){
+//                 count++;
+//             }
+//         return count;
+//     } else {
+//         return false;
+//     }
+//  }
+//
+// console.log(countEs("Ease")); // returns 2;
+// console.log(countEs("teleconference")); // returns 5;
+// console.log(countEs("TOM")); // returns 0;
+// console.log(countEs(true)); // returns false;
+// console.log(countEs(['e', 'E'])); // returns false;
+// console.log(countEs()); // returns false;
 
-console.log(countEs("Ease")); // returns 2;
-console.log(countEs("teleconference")); // returns 5;
-console.log(countEs("TOM")); // returns 0;
-console.log(countEs(true)); // returns false;
-console.log(countEs(['e', 'E'])); // returns false;
-console.log(countEs()); // returns false;
+// Warm-up 05/03/2023
+// Write a function that takes in a string and returns true if the argument contains at least one instance of the letter 'e'. This should be case-insensitive. If the argument is not a string, or if the argument does not contain 'e' it should return false.
 
+// function countEs(str) {
+//     if(typeof str === "string"){
+//         let case = str.toLowerCase();
+//         if ( case = str.charAt() === "e")
+//         return ;
+//     } else{
+//         return false;
+//     }
+//
+//
+// }
 
+// function takeString(str){
+//     if ( typeof str === "string"){
+//         let lowerCase =
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+
+//David's Solution
+// function containsE(str){
+//     if(countEs(str) === false){
+//         return false;
+//     } else{
+//         return countEs(str) > 0;
+//     }
+// }
+//  // Johann's Solution
+// function containsE(str){
+//     if(typeof str !== "string"){
+//         return false;
+//     } else {
+//         return str.toLowerCase().indexOf("e") > -1;
+//     }
+// }
+//
+//
+// console.log(takeString("Ease")); // returns 2;
+// console.log(takeString("teleconference")); // returns 5;
+// console.log(takeString("TOM")); // returns 0;
+// console.log(takeString(true)); // returns false;
+// console.log(takeString(['e', 'E'])); // returns false;
+// console.log(takeString()); // returns false;
 
 
 
