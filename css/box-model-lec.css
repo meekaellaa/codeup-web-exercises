@@ -1,0 +1,39 @@
+/** {*/
+/*    margin: 20px;*/
+/*}*/
+
+
+.box {
+    background: #855A04;
+    width: 25vh;
+    height: 25vh;
+    padding: 25px 65px 10px 1000px;
+    /*padding-top: 25px;*/
+    /*padding-bottom: 10px;*/
+    /*padding-right: 65px;*/
+    /*padding-left: 1000px;*/
+    /*border: 5px solid antiquewhite;*/
+    border-bottom: 5px solid #faedcd;
+    border-top: 5px solid #faedcd;
+    border-right: 5px solid #faedcd;
+    border-left: 5px solid #faedcd;
+    margin: 20px auto;
+}
+/*PADDING: around element, pushes the text over. provide 2 value, 1st value =y and 2nd value= x  n third value effect bottom. 4 value = is now clockwise. top, right, bottom, left.
+ other ways to do it, is to specify top/bottom/right/left*/
+/*BOARDER: is a way to test that CSS is working. Boarder goes around padding surrounding content.typically used singularly not like padding. the order of the values, doesnt matter. */
+/*MARGIN: spacing between elements and the left of our page. text-align center, align texts. how to center elements to center, instead of a value add auto.  */
+
+.playground{
+    background: darkseagreen;
+    width: 45px;
+    height: 45px;
+}
+.image{
+    width: 500px;
+    padding: 20px;
+    border: 20px solid darkgreen;
+    margin: 100px;
+    display: inline-block;
+}
+
