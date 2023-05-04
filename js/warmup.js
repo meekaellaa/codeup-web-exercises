@@ -127,6 +127,80 @@
 // console.log(takeString()); // returns false;
 
 
+//Warm-Up 04/04/2023
+// Write a function named fizzBuzz that prints to the console the number 1 - 100. If the number is divisible by 3 print fizz instead of the number. If the number is divisible by 5 print buzz. If the number is divisible by both 3 and 5 print fizzBuzz.
+
+
+// function fizzBuzz(x){
+//     for(let x =1 ; x <=100; x++)
+//     if(x % 3 === 0){
+//         return "fizz";
+//     } else if(x % 5 === 0){
+//         return "buzz"
+//     } else if(x % 3 === 0 && x % 5 === 0)
+//         return "fizzBuzz";
+// }
+
+// let f = "fizz";
+// let b = "buzz";
+// for (let num = 1; num <=100 ; num++) {
+//     if (num% 3 === 0 && num % 5 ===0){
+//         return
+//     }
+//     else if (num % 5 === 0){
+//         console.log(num+b);
+//     }
+//     else if (num % 3 === 0){
+//         console.log(num+f);
+//     }
+//     else {
+//         console.log(num);
+//     }
+// }
+//1. Start 1-100 to print in console
+//2.
+function fizzBuzz(){
+
+    for (let i=1;i <= 100;i++){
+       if(i % 3 === 0 && i % 5 === 0){
+           console.log("fizzbuzz");
+       } else if(i % 5 === 0){
+            console.log("buzz")
+       } else if(i % 3 === 0){
+           console.log("fizz")
+       }else{
+           console.log(i);
+       }
+    }
+}
+
+fizzBuzz();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

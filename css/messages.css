@@ -1,3 +1,4 @@
+
 *{
     padding: 4px ;
     margin: 4px auto;
@@ -11,32 +12,31 @@ body, html {
     margin: 0px;
     font-family: Arial, Ubuntu, sans-serif;
 }
-
+.message{
+    margin: 10px auto;
+    border: 1px solid lightgray;
+}
 .message-info{
     background-color: #CDDEFF;
     color: #291e89;
-    margin: 10px auto;
-    border: 1px solid lightgray;
+
 
 }
 
 .message-success{
     background-color:#CFF3DA;
     color: #418d5e;
-    margin: 10px auto;
-    border: 1px solid lightgray;
+
 }
 
 .message-warning{
     background-color: #FCFBC9;
     color: #a4943b;
-    margin: 10px auto;
-    border: 1px solid lightgray;
+
 }
 
 .message-error{
     background-color:#FAD3D7 ;
     color: #841934;
-    margin: 10px auto;
-    border: 1px solid lightgray;
+
 }
