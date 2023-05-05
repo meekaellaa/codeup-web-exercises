@@ -1,76 +1,85 @@
+#main-heading {
+  text-align: left;
+  text-decoration: unset;
+}
+.welcome {
+  text-align: center;
+}
+h1 {
+  color: wheat;
+  text-decoration: underline;
+}
+h2 {
+  color: wheat;
+  text-decoration: underline;
+  text-indent: 2em;
+}
+h3 {
+  color: wheat;
+  text-decoration: underline;
+}
 
-#main-heading{
-    text-align: left;
-    text-decoration: unset;
-}
-.welcome{
-    text-align: center;
-}
-h1{
-    color:wheat;
-    text-decoration: underline;
-}
-h2{
-    color: wheat;
-    text-decoration: underline;
-    text-indent: 2em;
-}
- h3{
-    color:wheat ;
-    text-decoration: underline;
-}
-
-body{
-    background-color: antiquewhite;
-    background-image: url("../img/coffee.png");
-    font-family: "Marker Felt";
-    text-indent: 2em;
-    background-attachment: fixed;
-    color: antiquewhite;
+body {
+  background-color: antiquewhite;
+  background-image: url("../img/brown-aesthetic-monstera-leaves-laptop-99yqqgos8tbywqwk.jpg");
+  font-family: "Marker Felt";
+  text-indent: 2em;
+  background-attachment: fixed;
+  color: antiquewhite;
 }
 
 ol {
-    list-style: upper-roman;
+  list-style: upper-roman;
 }
-ul{
-    list-style: circle;
-}
-
-table{
-    font-size: large;
-}
-table td{
-    font-size: inherit;
-
-}
-table tr{
-    font-size: inherit;
-    color: antiquewhite;
+ul {
+  list-style: circle;
 }
 
-a:link{
-    color: cadetblue;
+table {
+  font-size: large;
+}
+table td {
+  font-size: inherit;
+}
+table tr {
+  font-size: inherit;
+  color: antiquewhite;
 }
 
-a:visited{
-    color: honeydew;
+a:link {
+  color: cadetblue;
 }
 
-a:hover{
-    background-color: darkmagenta;
+a:visited {
+  color: honeydew;
 }
 
-a:active{
-    color: black;
+a:hover {
+  background-color: darkmagenta;
 }
-.vision{
-    text-align: right;
+
+a:active {
+  color: black;
 }
-.process{
-    text-align: center;
+.vision {
+  text-align: right;
 }
-#main-table{
-    text-align: center;
-    padding: 5px;
-    border: 5px solid wheat;
+.process {
+  text-align: center;
+}
+#main-table {
+  text-align: center;
+  padding: 5px;
+  border: 5px solid wheat;
+}
+.list-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 auto 0 auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: stretch;
+}
+.pic-container {
 }
