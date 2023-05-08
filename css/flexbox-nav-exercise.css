@@ -47,9 +47,7 @@ a {
   font-weight: bold;
   padding: 10px;
 }
-a:hover {
-  color: lightskyblue;
-}
-img:hover {
-  color: lightskyblue;
+nav a:hover {
+  background: lightskyblue;
+  display: inline-block;
 }
