@@ -23,30 +23,83 @@
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     </p>
+    <button id="button-one" type="button">Change Main Heading</button>
+    <button id="button-two" type="button">Change Subheading Color</button>
+    <button id="button-three" type="button">Update List Item</button>
+    <button id="button-four" type="button">Complete The Mission</button>
 
     <script>
       (function () {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        // var mainHeader = ;
+        // function named updateMainHeading. Since we already changed the main header into 'Javascript is cool' using innerHTML.
+        function updateMainHeading() {
+          // TODO: Uncomment next line and get the main header element by id
+          var mainHeader = document.getElementById("main-header");
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+          console.log(mainHeader);
 
-        // TODO: Uncomment the next line and get the sub header element by id
-        // var subHeader = ;
+          // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        // TODO: Set the text color of subHeader to blue
+          mainHeader.innerHTML = "JavaScript is Cool";
+          console.log(mainHeader.innerHTML);
+        }
+        function changeSubHeading() {
+          // TODO: Uncomment the next line and get the sub header element by id
+          var subHeader = document.getElementById("sub-header");
+          console.log(subHeader);
+
+          // TODO: Set the text color of subHeader to blue
+          subHeader.style.color = "#98f5ff";
+        }
 
         // TODO: Uncomment the next line and get all list items
-        // var listItems = ;
+        var listItems = document.getElementsByTagName("li");
+        for (let i = 0; i < listItems.length; i++) {
+          let dbId = listItems[i].getAttribute("data-dbid");
+          console.log(dbId);
+        }
 
-        // TODO: Set text color on every other list item to grey
+        function updateList() {
+          // TODO: Set text color on every other list item to grey
+          // when i=0, and i is less than the listItems length,increase i by one.
+          //   if i has a remainder of 2 === 1 make i grey.
+          //if( i % 2 === 0) it will be EVEN BUT if( i % 2 === 1) will be ODD.
+          for (let i = 0; i < listItems.length; i++) {
+            if (i % 2 === 1) {
+              listItems[i].style.color = "grey";
+            }
+          }
+        }
+
         // TODO: Set text color of li with dbid = 1 to blue
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
+        for (let i = 0; i < listItems.length; i++) {
+          if (listItems[i].getAttribute("data-dbid") === "1") {
+            listItems[i].style.color = "#98f5ff";
+          }
+        }
+        function completeMission() {
+          // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+          var subParagraphs = document.getElementsByClassName("sub-paragraph");
+          console.log(subParagraphs);
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+          // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+          subParagraphs[0].innerHTML = "Mission Accomplished!";
+        }
+        // ------Main Header-------
+        // mainHeaderBtn = to button-one
+        // then added the event to mainHeaderBtn using calling the function updateMain Heading;
+        let mainHeaderBtn = document.getElementById("button-one");
+        mainHeaderBtn.addEventListener("click", updateMainHeading);
+        // --------Sub Heading---------
+        let subHeaderBtn = document.getElementById("button-two");
+        subHeaderBtn.addEventListener("click", changeSubHeading);
+        // -------List Update----------
+        let listUpdate = document.getElementById("button-three");
+        listUpdate.addEventListener("click", updateList);
+        // -------Sub Paragraph--------
+        let subParaBtn = document.getElementById("button-four");
+        subParaBtn.addEventListener("click", completeMission);
       })();
     </script>
   </body>
