@@ -22,7 +22,8 @@ let konamiCode = [
   "a",
 ];
 // figure out how to change this to utilize jQuery. AND if i use jQuery, do I need the keys array above?
-document.addEventListener("keydown", konami, false);
+// document.addEventListener("keydown", konami, false);
+$(document).on("keyup", konami);
 
 let keyCount = 0;
 // Everytime a key is pressed the function below konami gets called
@@ -40,7 +41,8 @@ function konami(input) {
     }
     // if the user doesn't another alert will populate saying telling the user to try again.
   } else {
-    alert("TRY AGAIN") && resetKey();
+    alert("TRY AGAIN");
+    resetKey();
   }
 }
 function codeActivated() {
