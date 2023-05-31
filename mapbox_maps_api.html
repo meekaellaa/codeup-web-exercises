@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>First Mapbox Map</title>
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <script src="js/mapbox_maps_api.js"></script>
+    <!-- Mapbox CSS -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      #map {
+        /* the width and height may be set to any size */
+        width: 100%;
+        height: 700px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+    <script src="css/mapbox_map_api.css"></script>
+    <!--    <h1 class="container">Welcome to Miami, Florida</h1>-->
+    <h1 class="container">WELCOME TO MIAMI</h1>
+    <!--    &lt;!&ndash; The HTML element that serves as the Mapbox container &ndash;&gt;-->
+    <div class="container">
+      <div id="map"></div>
+    </div>
+
+    <!-- Custom JS -->
+
+    <script>
+      mapboxgl.accessToken = myMapBoxToken;
+      var map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v12", // style URL
+        zoom: 15, // starting zoom
+        // coordinates for Miami, Florida
+        center: [-80.20066537967746, 25.800135743777826], // [lng, lat]
+      });
+
+      // var marker = new mapboxgl.Marker()
+      //   .setLngLat([-80.19203476982061, 25.762288111858954])
+      //   .addTo(map);
+      //
+      // var restaurantMarker = new mapboxgl.Marker()
+      //   .setLngLat([-80.20035564571064, 25.800090177586167])
+      //   .addTo(map);
+      //
+      // // This is for just my restaurant marker.
+      // restaurantMarker.getElement().addEventListener("click", function () {
+      //   var popup = new mapboxgl.Popup()
+      //     // .setLngLat([-80.20035564571064, 25.800090177586167])
+      //     .setHTML("<h3>Dunkunoo Jamaican Kitchen</h3>");
+      //   restaurantMarker.setPopup(popup);
+      //   popup.addTo(map);
+      // });
+      // array of restaurants:
+      var foodieInfo = [
+        {
+          address: "316 NW 24th St, Miami, FL 33127",
+          popupHTML: "<div class = 'dunkunoo'> Dunkunoo Jamaican Kitchen</div>",
+          image: "img/dunkunoo.jpg",
+        },
+        {
+          address: "187 NW 28th St, Miami, FL 33127",
+          popupHTML: "<div class = 'brick'> Brick</div>",
+          image: "img/brickwynwood.jpeg",
+        },
+        {
+          address: "2516 NW 2nd Ave, Miami, FL 33127",
+          popupHTML: "<div class = 'wynwood'> Wynwood Walls</div>",
+          image: "img/wynwood-walls-webp",
+        },
+      ];
+      // defines a function named markerandPopup, it takes in three parameters.
+      function markerandPopup(info, token, map) {
+        // markandPopup calls the geocode with 2 arguments "info.address and token".
+        // geocode function is expected to return coordinates.
+        // then method: is used to handle the successful resolution of the geocode and gives back a set of coordinates
+        geocode(info.address, token).then(function (coordinates) {
+          // the console log here, is just to check that the function is working.
+          console.log(coordinates);
+          //sets the center of the map to the coordinates.
+          map.setCenter(coordinates);
+          // this set the zoom level of the map
+          map.setZoom(12);
+          // creates a new marker and sets longitude and latitude using setLngLat and uses addTo method to add the coordinates to the map.
+          var marker = new mapboxgl.Marker().setLngLat(coordinates).addTo(map);
+          // and event listener is added to the marker, so when it's clicked the listeners function is executed.
+          marker.getElement().addEventListener("click", function () {
+            // inside the function, a popup is created and the content used is "info.popupHTML"
+            var popup = new mapboxgl.Popup().setHTML(info.popupHTML);
+            // the popup is associated with the marker using the syntax below.
+            marker.setPopup(popup);
+            // finally the popup is added to the map byt using "addTo".
+            popup.addTo(map);
+          });
+        });
+      }
+      // forEach is used to iterate through the array named foodieInfo
+      // FOR EACH element in the foodieInfo array, the function is executed.
+      foodieInfo.forEach(function (foodieInfo) {
+        // inside the function, the markerandPopup function is called with three arguments: foodieInfo, mapboxgl.accessToken, and map.
+        markerandPopup(foodieInfo, mapboxgl.accessToken, map);
+        //   the foodieInfo represents the current elemnt being iterated over. each element in the foodieInfo array containes info.
+        //this represents the access key needed to use Mapbox Api or libraries.
+        // map argument is passed becuause it represents the map object where the markers and popus will be added ensuring they are all added to the same map.
+      });
+    </script>
+  </body>
+</html>
