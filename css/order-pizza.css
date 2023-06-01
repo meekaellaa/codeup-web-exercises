@@ -1,0 +1,18 @@
+.jumbotron h1 {
+  background-color: lightgrey;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  opacity: 0.75;
+  color: black;
+}
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/pizza-for-exercise.png");
+  /* will make it into the background allowing you to place elements over it.*/
+  height: 346px;
+  background-size: cover;
+}
