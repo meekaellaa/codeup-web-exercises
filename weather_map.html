@@ -11,11 +11,16 @@
     <link href="css/weather_map.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="title">WEATHER</h1>
+    <div class="nav">
+      <input type="text" placeholder="Search..." id="search" />
+      <button type="submit" id="button">Search</button>
+    </div>
+    <div class="logo">Weather The Storm</div>
     <div id="weather-info"></div>
     <div class="container">
       <div id="map"></div>
     </div>
+    <div id="forecast-info"></div>
     <pre id="coordinates" class="coordinates"></pre>
 
     <script src="js/mapbox_maps_api.js"></script>
@@ -24,6 +29,7 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+    <script src="js/mapbox-geocoder-utils.js"></script>
     <script src="js/weather_map.js"></script>
   </body>
 </html>

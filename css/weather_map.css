@@ -1,14 +1,57 @@
 #map {
   /* the width and height may be set to any size */
-  width: 100%;
+  width: 75%;
   height: 700px;
+  margin: 70px 0 70px 0;
+  border: black 2px solid;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.title {
-  color: #855a04;
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .logo {
+    font-size: 50px;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .location-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .location-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+  }
+  #forecast-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .container-date {
+  }
 }
