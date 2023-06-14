@@ -2,7 +2,7 @@
   /* the width and height may be set to any size */
   width: 75%;
   height: 700px;
-  margin: 70px 0 70px 0;
+  margin: 50px 0 50px 0;
   border: black 2px solid;
 }
 /* Small devices (tablets, 768px and up) */
@@ -50,8 +50,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
   }
   .container-date {
+    border: black 2px solid;
+    border-radius: 5%;
+    padding: 4px;
+    margin: 3px;
   }
 }

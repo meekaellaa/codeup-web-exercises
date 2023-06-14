@@ -60,9 +60,11 @@ $(function () {
           daysOfWeek[todayDate.getDay()]
         }, ${
           monthsOfYear[todayDate.getMonth()]
-        } ${todayDate.getDate()}</h3><p>${data.list[i].main.temp_min}/${
-          data.list[i].main.temp_max
-        }</p><p>${data.list[i].weather[0].description}</p></div>`;
+        } ${todayDate.getDate()}</h3><p>${data.list[i].main.temp_min.toFixed(
+          0
+        )}/${data.list[i].main.temp_max.toFixed(0)}&#8457</p><p>${
+          data.list[i].weather[0].description
+        }</p></div>`;
       }
       $("#forecast-info").html(forecastHtmlString);
     });
@@ -114,3 +116,4 @@ $(function () {
     });
   });
 });
+movieCard += `${data[i].title}`;
