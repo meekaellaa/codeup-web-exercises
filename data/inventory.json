@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Chicken",
+    "content": "A chicken is a bird. One of the features that differentiate it from most other birds is that it has a comb and two wattles.",
+    "categories": [
+      "chicken"
+    ],
+    "date": "December 27th, 2018"
+  }, {
+  "title": "Baby Chickens",
+  "content": "Chicks are baby chickens! Baby chickens are called chicks, 3 month old females are called pullets (until they start laying eggs around 6 months)",
+  "categories": [
+    "baby",
+    "chickens"
+  ],
+  "date": "December 31st, 2018"
+}, {
+  "title": "Pointe Ballet",
+  "content": "Footwear called Pointe shoes (also known as toe shoes). With their flat, stiff fronts and special construction, pointe shoes give ballerinas the footwear that helps them stay on their toes and wow audiences.",
+  "categories": [
+    "shoes",
+    "ballet"
+  ],
+  "date": "January 1st, 2019"
+}
+]

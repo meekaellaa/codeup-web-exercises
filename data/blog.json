@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Ballet Shoes",
+    "content": " Pointe shoes are hard ballet flat shoes, covered in pink satin and has ribbons. There are so many different types of pointe shoes that you might actually go insane",
+    "categories": [
+      "ballet"
+    ],
+    "date": "January 26, 2013"
+  }, {
+  "title": "More Ballet Shoes",
+  "content": "At the beginning of a new dance year and receive your schedule for classes and see that you are taking pointe class your heart flutters. Knowing that you have reached the highest level in ballet you get to and choose out a pair of pointe shoes, sew your ribbons and elastic onto them, and lastly able to put them on and good for go for class.",
+  "categories": [
+    "ballet",
+    "shoes"
+  ],
+  "date": "February 07, 2013"
+},
+  {
+    "title": "What about how ugly ballet dancer's feet are?",
+    "content": "With their crooked toes, bumps, and blemishes, ballet dancers’ feet have such a distinctive look that there’s a condition named after them: dancer’s foot. All ballet dancers experience foot problems, but dancers practicing the pointe technique are most vulnerable.",
+    "categories": [
+      "ballet", "feet", "ugly"
+    ],
+    "date": "February 20, 2013"
+  }
+]
