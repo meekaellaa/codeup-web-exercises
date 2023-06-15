@@ -16,3 +16,6 @@
   height: 346px;
   background-size: cover;
 }
+.card-container {
+  border: 2px black solid;
+}
